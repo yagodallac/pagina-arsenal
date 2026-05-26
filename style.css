@@ -1,5 +1,70 @@
 @charset "UTF-8";
 
+:root {
+    --vermelho-color: #DB0007;
+    --azul-color: #063672;
+    --dourado-color: #9C824A;
+    --font-family: 'Arial', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------------------------------------------------*/
+
 body {
+    height: 100vh;
+    background-color: white;
+}
+/* cabeçalho */
+header {
+    background-color: var(--vermelho-color);
+}
+/* título do cabeçalho */
+header h1 {
+    color: white;
+}
+/* parágrafo do cabeçalho */
+header p {
+    color: white;
+}
+
+/* seção */
+section {
+    
+}
+/* conteúdo com imagem */
+article.imagem {
+    
+}
+/* título do conteúdo com imagem */
+article.imagem > h2 {
+    
+}
+/* parágrafo do conteúdo com imagem */
+article.imagem > p {
+    
+}
+/* conteúdo normal */
+article.normal {
+    
+}
+/* título do conteúdo normal */
+article.normal > h2 {
+    
+}
+/* parágrafo do conteúdo normal */
+article.normal > p {
+
+}
+
+/* rodapé */
+footer {
+    
+}
+/* parágrafo do rodapé */
+footer p {
     
 }
