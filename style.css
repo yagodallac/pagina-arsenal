@@ -1,10 +1,13 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root {
     --vermelho-color: #DB0007;
     --azul-color: #063672;
     --dourado-color: #9C824A;
-    --font-family: 'Arial', sans-serif;
+    --font-maiuscula: 'Arsenal SC', serif;
+    --font-normal: 'Arsenal', serif;
 }
 
 * {
@@ -24,11 +27,27 @@ header {
 }
 /* título do cabeçalho */
 header h1 {
+    padding: 50px 0px 5px 0px;
+    text-align: center;
+}
+/* link do título do cabeçalho */
+header h1 a {
+    font-size: 50px;
+    font-family: var(--font-maiuscula);
     color: white;
+    text-decoration: none;
+}  
+/* link do título do cabeçalho ao passar o mouse */
+header h1 a:hover {
+    text-decoration: underline;
+    background-color: var(--dourado-color);
 }
 /* parágrafo do cabeçalho */
 header p {
+    font-family: var(--font-normal);
     color: white;
+    padding-bottom: 50px;
+    text-align: center;
 }
 
 /* seção */
@@ -37,34 +56,77 @@ section {
 }
 /* conteúdo com imagem */
 article.imagem {
-    
+    background-color: var(--dourado-color);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
 }
 /* título do conteúdo com imagem */
 article.imagem > h2 {
-    
+    color: white;
+    font-family: var(--font-maiuscula);
+    padding: 10px 0px 10px 20px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to left, transparent, var(--dourado-color));
+    width: 350px;
+
 }
 /* parágrafo do conteúdo com imagem */
 article.imagem > p {
-    
+    color: white;
+    font-family: var(--font-normal);
+    padding: 20px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.445));
+    width: 350px;
+}
+/* imagem  01*/
+article.imagem#emirates {
+    background-image: url(imagens/emirates.jfif);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+/* imagem 02 */
+article.imagem#time {
+    background-image: url(imagens/time.jfif);
+    background-position: center center;
 }
 /* conteúdo normal */
 article.normal {
-    
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 20px;
+    line-height: 2em;
 }
 /* título do conteúdo normal */
 article.normal > h2 {
-    
+    font-family: var(--font-maiuscula);
+    padding-bottom: 20px;
+
 }
 /* parágrafo do conteúdo normal */
 article.normal > p {
+    font-family: var(--font-normal);
 
 }
 
 /* rodapé */
 footer {
-    
+    background-color: var(--vermelho-color);
+    padding: 10px;
+}
+/* link do rodapé */
+footer a {
+    color: white;
+    text-decoration: none;
+}
+/* link do rodapé ao passar o mouse */
+footer a:hover {    
+    text-decoration: underline;
+    background-color: var(--dourado-color);
 }
 /* parágrafo do rodapé */
 footer p {
-    
+    color: white;
+    text-align: center;
 }
