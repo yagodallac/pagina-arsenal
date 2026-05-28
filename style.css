@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-    --vermelho-color: #DB0007;
+    --vermelho-color: #690101;
     --azul-color: #063672;
     --dourado-color: #9C824A;
     --font-maiuscula: 'Arsenal SC', serif;
@@ -29,6 +29,7 @@ header {
 header h1 {
     padding: 50px 0px 5px 0px;
     text-align: center;
+    filter: drop-shadow(0px 0px 10px black);
 }
 /* link do título do cabeçalho */
 header h1 a {
@@ -57,6 +58,9 @@ section {
 /* conteúdo com imagem */
 article.imagem {
     background-color: var(--dourado-color);
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0px 10px 20px 0px black;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
@@ -69,7 +73,6 @@ article.imagem > h2 {
     margin-bottom: 10px;
     background-image: linear-gradient(to left, transparent, var(--dourado-color));
     width: 350px;
-
 }
 /* parágrafo do conteúdo com imagem */
 article.imagem > p {
@@ -77,14 +80,13 @@ article.imagem > p {
     font-family: var(--font-normal);
     padding: 20px;
     margin-bottom: 10px;
-    background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.445));
+    background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.877));
     width: 350px;
 }
 /* imagem  01*/
 article.imagem#emirates {
     background-image: url(imagens/emirates.jfif);
     background-position: right center;
-    background-repeat: no-repeat;
 }
 /* imagem 02 */
 article.imagem#time {
