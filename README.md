@@ -1,2 +1,2 @@
 # pagina-arsenal
-Pagina de poema sobre o Arsenal.
+pagina de estudo de html e css.
